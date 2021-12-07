@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+      <title>Formulário</title>
+<link rel="stylesheet" type="text/css" href="_css/cssdoformulario.css" media="screen">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="_js/validacoes.js"> </script>
+
+
+
+</head>
+<body id="corpo">
+	<form method="post">
+		
+		<u><h1>Formulário de Cadastro</h1></u>
+		<p><a href="primeirapaginahtml.html"> Início </a></p>
+		<br>
+    
+
+   	 <p> 
+  		Nome
+ 		<input type="text" class="form-control-sm" id="nome" placeholder="Nome">
+	</p>
+
+   	 <p>
+   	 	Sobrenome
+  <input type="text" class="form-control-sm" id="sobrenome" placeholder="Sobrenome">
+     </p>
+
+      <p>
+   	    Email
+  <input type="email" class="form-control-sm" id="email" placeholder="nome@exemplo.com">
+      </p>
+
+
+   <p>
+  		CPF
+  		<input type="text" class="form-control-sm" id="cpf" placeholder="000.000.000-00" onkeypress="maskCPF()" maxlength="14">
+  </p>
+
+   	 <p>
+  		Celular
+  		<input type="text" class="form-control-sm" id="fone" placeholder="(00) 00000-0000" onkeypress="maskCelular()" maxlength="15">
+	</p>
+
+   	<p> 
+         Data de Nascimento
+  <input type="date" class="form-control-sm" id="data" >
+   </p>
+
+ <p>
+   <textarea type="text" class="form-control-sm" id=exampleFormControlTextarea1 name="text-area-first" required placeholder="Mensagem:" rows= 6 cols=50></textarea>
+       
+</p>
+
+<p>
+
+   <button onclick="verificar()" type="submit"> Testar </button>
+
+</p>
+     
+</body>
+</html>
